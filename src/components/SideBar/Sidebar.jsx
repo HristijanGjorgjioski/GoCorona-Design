@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import logo from '../../assets/logo.svg'
+import Input from './Input/Input'
 
 const Sidebar = () => {
     return (
@@ -10,11 +11,23 @@ const Sidebar = () => {
                 <img src={logo} alt="logo" />
                 <h3>Gjorgjioski <span>Team</span></h3>
             </LogoWrapper>
+            <Form>
+                <h3>Sign Up</h3>
+                <Input placeholder="Full Name" type="text" />
+                <Input placeholder="E-mail" type="email" />
+                <Input placeholder="Password" type="password" />
+                <Input placeholder="Confirm Password" type="password" />
+            </Form>
         </Container>
     )
 }
 
-
+const Form = styled.form`
+    h3 {
+        color: #666666;
+        margin-bottom: 2rem;
+    }
+`;
 
 const LogoWrapper = styled.div`
     display: flex;
