@@ -10,10 +10,14 @@ const Sidebar = () => {
 }
 
 const Container = styled.div`
-    min-width: 400px;
-    backdrop-filter: blur(35px);
-    background-color: rgb(255, 255, 255, 0.8);
+    width: 100%;
     height: 100%;
-`;
+    backdrop-filter: blur(15px);
+    background-color: rgb(255, 255, 255, 0.2);
 
+    @media (max-width: 650px) {
+        
+    }
+`;
+    
 export default Sidebar
