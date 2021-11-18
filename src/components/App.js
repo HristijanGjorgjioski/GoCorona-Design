@@ -1,12 +1,16 @@
 import React from 'react'
+
 import styled from 'styled-components'
 import bg from '../assets/bg.png'
+import Main from './Main/Main'
+import Sidebar from './SideBar/Sidebar'
 
 const App = () => {
   return (
     <Container>
       <Wrapper>
-        App
+        <Sidebar />
+        <Main />
       </Wrapper>
     </Container>
   )
@@ -28,6 +32,7 @@ const Wrapper = styled.div`
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
+  display: flex;
 `
 
 export default App
