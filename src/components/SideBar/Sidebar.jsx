@@ -19,6 +19,12 @@ const Sidebar = () => {
                 <Input placeholder="Confirm Password" type="password" />
                 <button>Sign Up</button>
             </Form>
+            <div>
+                <Terms>
+                    By signing up, I agree to the Privacy Policy<br />and Terms of Service
+                </Terms>
+                <h4>Already have an account? <span>Sign In</span></h4>
+            </div>
         </Container>
     )
 }
@@ -44,6 +50,15 @@ const Form = styled.form`
         border: none;
         box-shadow: 0px 14px 9px -15px rgba(0,0,0,0.3);
         border-radius: 1rem;
+        background: #70ed89;
+        color: #fff;
+        font-weight: 600;
+        cursor: pointer;
+
+        transition: all 0.2s ease-in;
+        &:hover {
+            transform: translate(-5px);
+        }
     }
 `;
 
@@ -69,6 +84,14 @@ const LogoWrapper = styled.div`
     }
 `;
 
+const Terms = styled.p`
+    padding: 0 1rem;
+    text-align: center;
+    font-size: 10px;
+    color: #808080;
+    font-weight: 300;
+`;
+
 const Container = styled.div`
     width: 100%;
     height: 100%;
@@ -79,6 +102,18 @@ const Container = styled.div`
     padding: 0 2rem;
     backdrop-filter: blur(15px);
     background-color: rgb(255, 255, 255, 0.6);
+
+    h4 {
+        color: #808080;
+        font-weight: bold;
+        font-size: 13px;
+        margin-top: 2rem;
+
+        span {
+            color: #FF8D8D;
+            cursor: pointer;
+        }
+    }
 `;
     
-export default Sidebar
+export default Sidebar;
