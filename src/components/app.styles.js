@@ -1,20 +1,6 @@
-import React from 'react'
+import styled from "styled-components";
 
-import styled from 'styled-components'
 import bg from '../assets/bg.png'
-import Main from './Main/Main'
-import Sidebar from './SideBar/Sidebar'
-
-const App = () => {
-  return (
-    <Container>
-      <Wrapper>
-        <Sidebar />
-        <Main />
-      </Wrapper>
-    </Container>
-  )
-}
 
 const Container = styled.div`
   background-color: #EECFF;
@@ -33,6 +19,6 @@ const Wrapper = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
-`
+`;
 
-export default App
+export { Container, Wrapper }
