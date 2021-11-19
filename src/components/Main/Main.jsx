@@ -22,7 +22,7 @@ const Container = styled.div`
         color: #343434;
     }
 
-    @media (max-width: 760px) {
+    @media (max-width: 900px) {
         display: none;
     }
 `

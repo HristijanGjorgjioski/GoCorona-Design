@@ -17,15 +17,33 @@ const Sidebar = () => {
                 <Input placeholder="E-mail" type="email" />
                 <Input placeholder="Password" type="password" />
                 <Input placeholder="Confirm Password" type="password" />
+                <button>Sign Up</button>
             </Form>
         </Container>
     )
 }
 
 const Form = styled.form`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     h3 {
         color: #666666;
         margin-bottom: 2rem;
+    }
+
+    button {
+        width: 75%;
+        max-width: 350px;
+        min-width: 250px;
+        padding: 0 1rem;
+        margin: 1rem 0;
+        height: 40px;
+        border: none;
+        box-shadow: 0px 14px 9px -15px rgba(0,0,0,0.3);
+        border-radius: 1rem;
     }
 `;
 
